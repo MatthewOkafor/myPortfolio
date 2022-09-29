@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fda0a00cb2.js" crossorigin="anonymous"></script>
+  <title>Matthew Okafor Portfolio</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+
+  <div id="header">
+    <div class="container">
+      <nav id="navbar">
+        <h1 class="logo"><span class="firstletter">M</span>atthew<span class="fullstop">.</span></h1>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-body">
+        
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm <span>Matthew</span><br>Okafor from Nigeria</h1>
+        </div>
+        <div class="img">
+          <img src="images/matt.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/matt.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm a software engineer who loves to create beautiful and functional softwares. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eum dolor, ipsa aperiam quisquam nihil numquam ea vel quaerat officiis. Numquam consectetur, repellendus nobis maiores optio minus ab vero sint ea, suscipit impedit! Vitae quibusdam, necessitatibus possimus libero assumenda dolorem fuga eos minima similique odio, molestiae eius fugit tenetur voluptate?</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Frontend Engineer</span><br>Bringing Web interfaces to life</li>
+              <li><span>Frontend Engineer</span><br>Bringing Web interfaces to life</li>
+              <li><span>Frontend Engineer</span><br>Bringing Web interfaces to life</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2020 - Present</span><br>WordPress Developer at LollyMatt Technologies</li>
+              <li><span>2019 - 2020</span><br>Business Manager at Geneses Trade Partners</li>
+              <li><span>2010 - 2019</span><br>Service Executive at First Bank of Nigeria Ltd</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2020</span><br>Frontend Engineering at FreeCodeCamp</li>
+              <li><span>2020</span><br>WordPress Development at YouTube (Self-taught)</li>
+              <li><span>2013</span><br>HND in Computer Science from Lagos State Polytechnic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Services Section -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Frontend Engineering</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti amet soluta nisi quas eos repellat distinctio!</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fas fa-crop-alt"></i>
+          <h2>Backend Engineering</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti amet soluta nisi quas eos repellat distinctio!</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fab fa-app-store"></i>
+          <h2>Fullstack Engineering</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti amet soluta nisi quas eos repellat distinctio!</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Portfolio Section -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/phone.jpg" alt="">
+          <div class="layer">
+            <h3>DeFirenze Suites</h3>
+            <p>The website enables you book the best hotel in Amuwo Odofin.</p>
+            <a href="https://www.defirenzesuites.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/phone.jpg" alt="">
+          <div class="layer">
+            <h3>Model Facility Interiors</h3>
+            <p>Here, you can buy a wide range of home and office furniture from the number one interior design outfit in Lagos.</p>
+            <a href="https://www.modelfacilityinv.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/phone.jpg" alt="">
+          <div class="layer">
+            <h3>DeFirenze Suites</h3>
+            <p>The website enables you book the best hotel in Amuwo Odofin.</p>
+            <a href="https://www.defirenzesuites.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+
+  <!-- Contact Section -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>I'd love to hear from you. I am available for projects and frontend developer roles.</p>
+          <p><i class="fas fa-paper-plane"></i>Lagos, Nigeria</p>
+          <p><i class="fas fa-paper-plane"></i>marymatt009@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>+234 814 178 0425</p>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/OkaforMatthewEziuno/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/mokafordev/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/mokafordev/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/matthew-okafor-04112219a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/mokafordev.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="https://formspree.io/f/xvoyanek" method="POST">
+            <input type="text" id="Name" name="Name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Email id" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone no."
+       maxlength ="13"
+       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright <span>&copy</span> <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> <span class="firstletter">M</span>atthew<span class="fullstop">.</span> Lagos, Nigeria</p>
+    </div>
+  </div>
+
+  <!-- JavaScript Section -->
+  
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab (tabname) {
+      for(tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+</body>
+</html>
