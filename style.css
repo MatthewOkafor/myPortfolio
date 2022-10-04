@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  padding: 10px 10%;
+  padding: 5px 15%;
 }
 
 nav {
@@ -113,7 +113,7 @@ nav ul li a:hover::after {
 /* About Section */
 
 #about {
-  padding: 80px 0;
+  padding: 10px 0;
   color: #ababab;
   margin-top: 80px;
 }
@@ -396,11 +396,11 @@ form .btn2 {
 }
 
 .copyright-left {
-  margin-left: 50px;
+  margin-left: 120px;
 }
 
 .copyright-right {
-  margin-right: 50px;
+  margin-right: 120px;
 }
 
 
@@ -523,3 +523,25 @@ nav .fas {
   margin-top: -40px;
   display: block;
 }
+/* 
+@media screen and (min-width: 480px) {
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  
+  .copyright-left {
+    margin-left: 80px;
+  }
+  
+  .copyright-right {
+    margin-right: 80px;
+  }
+    
+} */
