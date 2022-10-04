@@ -385,6 +385,8 @@ form .btn2 {
 }
 
 .copyright {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   text-align: center;
   padding: 25px 0;
@@ -392,6 +394,15 @@ form .btn2 {
   font-weight: 300;
   margin-top: 20px;
 }
+
+.copyright-left {
+  margin-left: 50px;
+}
+
+.copyright-right {
+  margin-right: 50px;
+}
+
 
 .copyright i {
   color: #ff004f;
