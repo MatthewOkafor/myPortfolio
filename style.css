@@ -386,7 +386,7 @@ form .btn2 {
 
 .copyright {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   text-align: center;
   padding: 25px 0;
