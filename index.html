@@ -14,6 +14,9 @@
   <!-- Header Section -->
 
   <div id="header">
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
     <div class="container">
       <nav id="navbar">
         <h1 class="logo"><span class="firstletter">M</span>atthew<span class="fullstop">.</span></h1>
@@ -223,6 +226,28 @@
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab")
     }
+
+    let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+  document.documentElement.scrollHeight - 
+  document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#ff004f ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
   </script>
 
   <script>
